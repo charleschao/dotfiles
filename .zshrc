@@ -109,9 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nmap="grc nmap"
 # ---- Eza (better ls) -----
-alias ls="eza --icons=always"
+alias ls="eza --icons=always -l -a --sort=modified -o" 
 #alias ls="eza --color=always --long --git --icons=always --no-user --no-permissions"
-alias dotfiles='/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/opt/homebrew/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
